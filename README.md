@@ -1,16 +1,19 @@
 # Shoppinglist
-Simple shopping list
+Simple shopping list for personal use.
 
 
-The Andela Developer Challenge is founded on the premise that aspiring Technology Leaders learn programming whilst building things that matter. That the best way to learn code is by building a complete product. As we build applications that solve real problems, we internalize deeply the skills needed to be World Class Software Developers.
+## Usage
 
-## Challenge:
+The shopping list app is web based and will thus help users record and share things that that they mostly want to spend money
+on and keeping track of their changes.
 
-The challenge of -----keeping track of shopping items---- is a need for -----many individuals----- that requires an innovative and robust solution that will ----- allow them to remember and share the shopping lists with others -----.
+##Installing
+Clone the repo from:https://github.com/joewachira/Shoppinglist/tree/deploy2
 
-## Description of the application:
+##coveralls coverage
+[![Coverage Status](https://coveralls.io/repos/github/joewachira/Shoppinglist/badge.svg?branch=deploy2)](https://coveralls.io/github/joewachira/Shoppinglist?branch=deploy2)
 
-The innovative shopping list app is a web based application that allows users  to record and share things they want to spend money on  meeting the needs of keeping track of their shopping lists.
+##Travis CI
 
-First thing done was to create a project for the Whole Shopping List challenge on the pivotal tracker web.
-And creating required stories for all the challenges.
+
+##Code climate
