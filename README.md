@@ -10,10 +10,11 @@ on and keeping track of their changes.
 # Installing
 Clone the repo from:https://github.com/joewachira/Shoppinglist/tree/deploy2
 
-# coveralls coverage
+# coveralls
 [![Coverage Status](https://coveralls.io/repos/github/joewachira/Shoppinglist/badge.svg?branch=deploy2)](https://coveralls.io/github/joewachira/Shoppinglist?branch=deploy2)
 
 # Travis CI
+https://travis-ci.org/joewachira/Shoppinglist.svg?branch=master
 
 
 # Code climate
