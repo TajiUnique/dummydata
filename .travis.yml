@@ -1,0 +1,27 @@
+language: python
+#version
+python:
+  - "3.4"
+  - "3.6.2"
+
+
+before_script:
+ - chmod +x tests/run_travis.sh
+
+script:
+ - tests/run_travis.sh
+
+
+# whitelist
+branches:
+  only:
+    - master
+
+#dependacies and libraries to install
+
+  - pip3 install .
+  - pip3 install -r requirements.txt
+# command to run tests
+
+after_success:
+  -coveralls
