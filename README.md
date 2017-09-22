@@ -14,6 +14,6 @@ Clone the repo from:https://github.com/joewachira/Shoppinglist/tree/deploy2
 [![Coverage Status](https://coveralls.io/repos/github/joewachira/Shoppinglist/badge.svg?branch=deploy2)](https://coveralls.io/github/joewachira/Shoppinglist?branch=deploy2)
 
 # Travis CI
-
+[![Coverage Status] (https://travis-ci.org/repos/github/joewachira/Shoppinglist/badge.svg? branch=deploy2)](https://travis-ci.org/repos/github/joewachira/Shoppinglist/builds)
 
 # Code climate
