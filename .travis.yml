@@ -5,7 +5,7 @@ python:
   - "3.6.2"
 
 
-before_script:
+before_install:
  - chmod +x tests/run_travis.sh
 
 script:

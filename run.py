@@ -1,8 +1,8 @@
 __author__ = 'joe'
 
-from app import app
+from app import createapp
 
-app = app()
+app = createapp()
 
 if __name__ == "__main__":
     app.run(debug=True)

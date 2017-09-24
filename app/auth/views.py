@@ -7,9 +7,9 @@ from app import auth
 from app.auth.forms import LoginForm, RegistrationForm
 
 
-@auth.route("/register", methods=['GET', 'POST'])
+@auth.route("/index", methods=['GET', 'POST'])
 def register():
-    # Handle requests to the /register route and add new user
+    # Handle requests to the /index route and add new user
 
     form = RegistrationForm()
     if form.validate_on_submit():

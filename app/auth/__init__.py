@@ -1,19 +1,8 @@
 # import render_templates
-import app
-
 __author__ = 'joe'
+from flask import Blueprint
 
-import flask
+# blueprint object creation and initialization
+auth = Blueprint('auth', __name__)
 
-app = flask
-
-
-@app.route("/templates.index.html/")
-def index():
-    return render_templates('templates.index.html')
-
-
-@app.route('/signup', methods=['POST'])
-def signup():
-    if __name__ == '__main':
-        app.run()
+from . import views
