@@ -6,7 +6,7 @@ from .user_operation import UserManager
 from app.auth.forms import LoginForm, RegistrationForm
 
 from . import auth
-@auth.route("/register  ", methods=['GET', 'POST'])
+@auth.route("/  ", methods=['GET', 'POST'])
 def register():
     # Handle requests to the /index route and add new user
 
@@ -31,7 +31,7 @@ def register():
             return redirect(url_for("auth.register"))
 
     # load registration template if error occured
-    return render_template('/index.html', form=form, title='Register')
+    return render_template('home/index.html', form=form, title='Register')
 
 
 @auth.route("/login", methods=['GET', 'POST'])
