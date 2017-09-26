@@ -6,4 +6,3 @@ class Item(object):
         self.item_name = item_name
         self.id = get_random_id()
         self.list_id = list_id
- 

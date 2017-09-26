@@ -4,7 +4,6 @@ from app.shoppinglist_operations import ShoppinglistManager
 
 
 class ShoppingListTest(unittest.TestCase):
-    # print('')
 
     def setUp(self):
         self.shoppingList = ShoppinglistManager()
