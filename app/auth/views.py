@@ -3,11 +3,10 @@ from flask import flash, redirect, render_template, url_for, session
 
 from app.auth.user_class import Userr
 from .user_operation import UserManager
-from app import auth
 from app.auth.forms import LoginForm, RegistrationForm
 
-
-@auth.route("/index", methods=['GET', 'POST'])
+from . import auth
+@auth.route("/register  ", methods=['GET', 'POST'])
 def register():
     # Handle requests to the /index route and add new user
 
