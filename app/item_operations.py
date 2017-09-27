@@ -4,6 +4,9 @@ from flask import session
 class ItemManager(object):
     items = {}
 
+    def __init__(self):
+        self.name = name
+
     def update(self, name):
 
         if name is None or len(name) < 1:
@@ -12,16 +15,12 @@ class ItemManager(object):
         if not isinstance(name, str):
             return "Item name must be a string"
 
-        self.name = name
-
-
     def addToDic(self, key, value):
         if isinstance(key, str):
             self.items.setdefault(key, []).append(value)
             return self.items
         else:
             raise ValueError
-
 
     def get_item_listObject(self, item_id):
         if isinstance(item_id, int):

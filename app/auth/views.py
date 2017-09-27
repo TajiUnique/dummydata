@@ -1,14 +1,13 @@
-__author__ = 'joe'
-from flask import flash, redirect, render_template, url_for, session
-
-from app.auth.user_class import Userr
+from .user_class import Userr
 from .user_operation import UserManager
-from app.auth.forms import LoginForm, RegistrationForm
-
+from flask import flash, redirect, render_template, url_for, session
 from . import auth
-@auth.route("/  ", methods=['GET', 'POST'])
+from .forms import LoginForm, RegistrationForm
+
+
+@auth.route("/register", methods=['GET', 'POST'])
 def register():
-    # Handle requests to the /index route and add new user
+    # Handle requests to the /register route and add new user
 
     form = RegistrationForm()
     if form.validate_on_submit():
@@ -20,7 +19,7 @@ def register():
                      password=form.password.data,
                      )
 
-        # add new user to list
+        # add new user to list     
         is_register_ok = UserManager().register(user.email, user)
         if is_register_ok:
             session['email'] = user.email
@@ -31,7 +30,7 @@ def register():
             return redirect(url_for("auth.register"))
 
     # load registration template if error occured
-    return render_template('home/index.html', form=form, title='Register')
+    return render_template('auth/register.html', form=form, title='Register')
 
 
 @auth.route("/login", methods=['GET', 'POST'])
@@ -51,12 +50,12 @@ def login():
         return redirect(url_for('auth.login'))
 
     # load login template
-    return render_template('/login.html', form=form, title='Login')
+    return render_template('auth/login.html', form=form, title='Login')
 
 
 @auth.route("/logout")
 def logout():
-    # Logging a user out through the logout link
+    # Log a user out through the logout link
 
     session["logged_in"] = None
     flash('You have successfully been logged out.')

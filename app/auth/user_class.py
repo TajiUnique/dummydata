@@ -1,7 +1,7 @@
-__author__ = 'joe'
-# The script handles operations to be performed on user accounts
-# That is adding user or deleting user
+#this script handles the operations to be performed on user accounts
+#for example adding user or deleting user
 class Userr(object):
+
     def __init__(self, username, email, f_name, l_name, password):
         self.username = username
         self.email = email

@@ -1,8 +1,6 @@
-__author__ = 'joe'
-
 from flask import Blueprint
 
-# create a Blueprint object and initialize it with a name
+#create a blueprint object and initialize it with a name
 home = Blueprint('home', __name__)
 
-from . import home
+from . import views

@@ -1,8 +1,6 @@
-# import render_templates
-__author__ = 'joe'
 from flask import Blueprint
 
-# blueprint object creation and initialization
+#create a blueprint object and initialize it with a name
 auth = Blueprint('auth', __name__)
 
 from . import views

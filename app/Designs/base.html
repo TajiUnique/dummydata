@@ -1,0 +1,68 @@
+<!-- This is the base template to work with all other html pages. Making it easier carry over changes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Standard Meta -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    {% if title %}
+    <!-- Site Properties -->
+    <title>{{ title }}</title>
+
+    {% else %}
+
+    <title>Shopping List </title>
+
+    {% endif %}
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ <body>
+
+        <div class="jumbotron-fluid text-center">
+          <h1>Create your Shopping List</h1>
+          <p>Keep track of your shopping list.</p> 
+           
+
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                {% if session.logged_in %}
+                  <a class="navbar-brand" href="{{ url_for("home.dashboard")}}">Shopping List</a>
+                {% else %}
+                <a class="navbar-brand" href="{{ url_for("auth.login")}}">Shopping List</a>
+                {% endif %}
+              </div>
+              <ul class="nav navbar-nav ">
+                {% if session.logged_in %}                  
+                  <li><a href="{{ url_for("home.dashboard")}}">dashboard</a></li>
+                  <li><a href="{{ url_for("home.newShoppinglist")}}">Add new list</a></li>
+                {% endif %}
+
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                {% if not session.logged_in %}
+                  <li><a href="{{ url_for("auth.register") }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="{{ url_for("auth.login") }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                {% else %}
+                <li><a href="{{ url_for("auth.logout") }}"><span class="glyphicon glyphicon-user"></span>{{ session["email"]}} Sign out</a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+
+        {% block content %}{% endblock %}
+
+        
+</body>
+</html>

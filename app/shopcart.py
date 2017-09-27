@@ -10,7 +10,6 @@ class ShoppingCart(object):
         self.owner_email = owner_email
         self.id = get_random_id()
 
-
     def add_item(self, item_name):
 
         if item_name is None or len(item_name) < 1:
@@ -27,7 +26,6 @@ class ShoppingCart(object):
         self.items.append(new_item)
 
         return new_item.id
-
 
     def update(self, new_title):
 
