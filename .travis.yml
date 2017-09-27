@@ -1,3 +1,4 @@
+sudo : true
 env:
   global:
     - CC_TEST_REPORTER_ID=a6fcd76e3720a4c363636fbcc538996e6d39966a9f634c0d5addef0099be08c1
