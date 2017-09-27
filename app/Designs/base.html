@@ -44,6 +44,8 @@
                 {% if session.logged_in %}                  
                   <li><a href="{{ url_for("home.dashboard")}}">dashboard</a></li>
                   <li><a href="{{ url_for("home.newShoppinglist")}}">Add new list</a></li>
+                  <li><a href="{{ url_for("")}}">View Shopping Lists</a></li>
+                  <li><a href="{{ url_for("") }}">update Shopping Lists</a></li>
                 {% endif %}
 
                 

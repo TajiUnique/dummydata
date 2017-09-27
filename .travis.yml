@@ -10,10 +10,12 @@ before_install:
 # whitelist
 branches:
   only:
-    - master
+    - deploy2
 
 #dependacies and libraries to install
 install: pip install -r requirements.txt
+
+ -nosetests --with-coverage
 
 after_success:
   - coveralls
