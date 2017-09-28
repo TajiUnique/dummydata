@@ -14,6 +14,9 @@ on and keeping track of their changes.
  To run unittests locally, install nose then point it to the tests folder located at tests folder of the project
 
  nosetests tests
+ 
+ 
+![travis build pass](https://travis-ci.org/joewachira/Shoppinglist.svg?branch=staging) 
 
 
 ## Flask Application
