@@ -1,5 +1,7 @@
 ## Shoppinglist
 Simple shopping list for personal use.
+The innovative shopping list app is a web based application that allows users  to record and share things they want to spend money on  meeting the needs of keeping track of their shopping lists.
+
 
 
 ## Usage
@@ -22,6 +24,6 @@ The file app.py is used to run the flask application. To run it use
     
 it will run a local webserver on http://127.0.0.1:5000 and user will be provided with a home page
 
-## Application on Horoku
+## Application on Heroku
 
 Running the app requires you to just visit the url  https://shoplapp.herokuapp.com/register
