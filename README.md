@@ -1,19 +1,32 @@
-# Shoppinglist
+## Shoppinglist
 Simple shopping list for personal use.
+The innovative shopping list app is a web based application that allows users  to record and share things they want to spend money on  meeting the needs of keeping track of their shopping lists.
 
 
-# Usage
+
+## Usage
 
 The shopping list app is web based and will thus help users record and share things that that they mostly want to spend money
 on and keeping track of their changes.
 
-# Installing
-Clone the repo from:https://github.com/joewachira/Shoppinglist/tree/deploy2
+## Running Tests
 
-# coveralls
-[![Coverage Status](https://coveralls.io/repos/github/joewachira/Shoppinglist/badge.svg?branch=deploy2)](https://coveralls.io/github/joewachira/Shoppinglist?branch=deploy2)
+ To run unittests locally, install nose then point it to the tests folder located at tests folder of the project
 
-# Travis CI
-[![Coverage Status] (https://travis-ci.org/repos/github/joewachira/Shoppinglist/badge.svg? branch=deploy2)](https://travis-ci.org/repos/github/joewachira/Shoppinglist/builds)
+ nosetests tests
+ 
+ 
+![travis build pass](https://travis-ci.org/joewachira/Shoppinglist.svg?branch=staging) 
 
-# Code climate
+
+## Flask Application
+
+The file app.py is used to run the flask application. To run it use
+
+    python run.py  
+    
+it will run a local webserver on http://127.0.0.1:5000 and user will be provided with a home page
+
+## Application on Heroku
+
+Running the app requires you to just visit the url  https://shoplapp.herokuapp.com/register

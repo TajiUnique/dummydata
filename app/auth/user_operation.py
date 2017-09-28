@@ -13,7 +13,6 @@ class UserManager(object):
                 if usrs_obj_list.password == password:
                     return True
 
-
     def register(self, key, value):
         if not key:
             return "Key cannot be blank"
