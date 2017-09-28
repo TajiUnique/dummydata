@@ -16,10 +16,7 @@ def register():
         # import pdb; pdb.set_trace()
         user = Userr(username=form.username.data,
                      email=form.email.data,
-                     f_name=form.first_name.data,
-                     l_name=form.last_name.data,
-                     password=form.password.data,
-                     )
+                     password=form.password.data,)
 
         # add new user to list     
         is_register_ok = UserManager().register(user.email, user)
@@ -31,7 +28,7 @@ def register():
             flash("That email has been taken")
             return redirect(url_for("auth.register"))
 
-    # load registration template if error occured
+    # load registration template if error occurred
     return render_template('auth/register.html', form=form, title='Register')
 
 

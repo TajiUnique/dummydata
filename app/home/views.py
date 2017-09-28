@@ -16,7 +16,7 @@ def homepage():
 
 
 @home.route('/lists', methods=['POST', 'GET'])
-def newShoppinglist():
+def new_shoppinglist():
     form = ShoppingList()
     if form.validate_on_submit():
         # create a new shopping list
@@ -53,8 +53,6 @@ def delete_shoppinglist(_ids):
     if is_deleted:
         flash("Item deleted successfully")
         return redirect(url_for('home.dashboard'))
-
-        # return render_template('home/newlist.html',form=form, title="Update")
 
 
 @home.route('/dashboard')
