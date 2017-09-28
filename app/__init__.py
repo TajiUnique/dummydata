@@ -1,10 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask
 from flask_bootstrap import Bootstrap
 
 
-def createApp():
+def create_app():
     app = Flask(__name__, template_folder='Designs')
-    app.secret_key = 'M@()S'
+    app.secret_key = ''
 
     Bootstrap(app)
 

@@ -1,3 +1,5 @@
+__author__ = 'joe'
+
 from flask import session
 
 
@@ -14,6 +16,8 @@ class ItemManager(object):
 
         if not isinstance(name, str):
             return "Item name must be a string"
+
+        self.name = name
 
     def addToDic(self, key, value):
         if isinstance(key, str):

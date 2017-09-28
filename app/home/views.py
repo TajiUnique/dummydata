@@ -5,17 +5,18 @@ from .shoppinglist_form import ShoppingList
 from app.shoppinglist_operations import ShoppinglistManager
 from . import home
 
+
 # routes or endpoints
 
 @home.route('/')
 def homepage():
     return redirect(url_for('auth.login'))
     # Render the homepage template on the / route
-    return render_template('home.index.html', title="Welcome")
+    return render_template('home/index.html', title="Welcome")
 
 
 @home.route('/lists', methods=['POST', 'GET'])
-def newshoppinglist():
+def newShoppinglist():
     form = ShoppingList()
     if form.validate_on_submit():
         # create a new shopping list
@@ -53,11 +54,10 @@ def delete_shoppinglist(_ids):
         flash("Item deleted successfully")
         return redirect(url_for('home.dashboard'))
 
+        # return render_template('home/newlist.html',form=form, title="Update")
+
 
 @home.route('/dashboard')
 def dashboard():
     new_shopping_cart = ShoppinglistManager.shopping_lists
     return render_template("home/dashboard.html", title="Dashboard", new_shopping_cart=new_shopping_cart)
-
-    # Render the newitem template on the /dashboard route
-    # return render_template('home/newitem.html',form=form, title="Add new")

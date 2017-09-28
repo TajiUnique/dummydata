@@ -1,3 +1,5 @@
+__author__ = 'joe'
+
 from .user_class import Userr
 from .user_operation import UserManager
 from flask import flash, redirect, render_template, url_for, session
@@ -14,6 +16,8 @@ def register():
         # import pdb; pdb.set_trace()
         user = Userr(username=form.username.data,
                      email=form.email.data,
+                     f_name=form.first_name.data,
+                     l_name=form.last_name.data,
                      password=form.password.data,
                      )
 
