@@ -14,8 +14,6 @@ def register():
         # import pdb; pdb.set_trace()
         user = Userr(username=form.username.data,
                      email=form.email.data,
-                     f_name=form.first_name.data,
-                     l_name=form.last_name.data,
                      password=form.password.data,
                      )
 
@@ -39,7 +37,7 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         is_correct_user = UserManager().login(form.email.data, form.password.data)
-        if is_correct_user == True:
+        if is_correct_user:
             # redirect
             session['email'] = form.email.data
             session['logged_in'] = True

@@ -1,3 +1,5 @@
+__author__ = 'joe'
+
 from flask import session
 
 
@@ -14,7 +16,7 @@ class ShoppinglistManager(object):
 
     def get_shopping_listObject(self, list_id):
         if isinstance(list_id, int):
-            for all_list in self.shopping_lists[session["email"]]:
+            for all_list in self.shopping_lists[session["username"]]:
                 if list_id == all_list.id:
                     # value exists for update
                     return all_list
