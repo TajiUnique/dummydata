@@ -33,14 +33,14 @@ it will run a local webserver on http://127.0.0.1:5000 and user will be provided
 Running the app requires you to just visit the url  https://shoplapp.herokuapp.com/register
 
 ## Build With
-Flask- The web framework used
-Flask-WTF- extension that wraps the project.
+- Flask- The web framework used
+- Flask-WTF- extension that wraps the project.
 
 ## Acknowledgement
 The following people have contributed to the concept/code:
 
-- [Mbithe Nzomo]
-- [Jee Gikera]
-- [Linnnette Wanjiru]
-- [Ann Mukundi]
+- Mbithe Nzomo
+- Jee Gikera
+- Linnnette Wanjiru
+- Ann Mukundi
 
