@@ -1,3 +1,8 @@
+
+ ![travis build pass](https://travis-ci.org/joewachira/Shoppinglist.svg?branch=staging) 
+
+[![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
+
 ## Shoppinglist
 Simple shopping list for personal use.
 The innovative shopping list app is a web based application that allows users  to record and share things they want to spend money on  meeting the needs of keeping track of their shopping lists.
@@ -18,11 +23,7 @@ on and keeping track of their changes.
  
 ![travis build pass](https://travis-ci.org/joewachira/Shoppinglist.svg?branch=staging) 
 
-<<<<<<< HEAD
 [![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
-
-=======
->>>>>>> 917d608752adcc0c5bf43ddb8536b4debb200b0f
 
 ## Flask Application
 
