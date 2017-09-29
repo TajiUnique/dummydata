@@ -39,7 +39,8 @@ Flask-WTF- extension that wraps the project.
 ## Acknowledgement
 The following people have contributed to the concept/code:
 
-Mbithe Nzomo
-Jee GIkera
-Linnette Wanjiru
-Ann Mukundi
+- [Mbithe Nzomo]
+- [Jee Gikera]
+- [Linnnette Wanjiru]
+- [Ann Mukundi]
+
