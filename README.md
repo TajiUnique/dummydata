@@ -1,17 +1,20 @@
 
- ![travis build pass](https://travis-ci.org/joewachira/Shoppinglist.svg?branch=staging) 
+ ![travis build pass](https://travis-ci.org/joewachira/Shoppinglist.svg?branch=deploy2) 
 [![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
 
 ## Shoppinglist
-Simple shopping list for personal use.
+Simple shopping list for personal use. Create a virtual enviroment `virtualenv --python=python3 env` then activate it `source env/bin/activate`
+
 The innovative shopping list app is a web based application that allows users  to record and share things they want to spend money on  meeting the needs of keeping track of their shopping lists.
 
-
+## Getting Started
+- Python 3.6.2 installation
+- Git installation
 
 ## Usage
-
-The shopping list app is web based and will thus help users record and share things that that they mostly want to spend money
-on and keeping track of their changes.
+> 1. Clone this repo :https://github.com/joewachira/Shoppinglist/tree/deploy2
+> 2. Create a virtual enviroment `virtualenv --python=python3 env` then activate it `source env/bin/activate`
+> 3. Install requirements `pip3 install -r requirements.txt`
 
 ## Running the Tests
 
