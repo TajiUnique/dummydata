@@ -18,8 +18,11 @@ on and keeping track of their changes.
  
 ![travis build pass](https://travis-ci.org/joewachira/Shoppinglist.svg?branch=staging) 
 
+<<<<<<< HEAD
 [![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
 
+=======
+>>>>>>> 917d608752adcc0c5bf43ddb8536b4debb200b0f
 
 ## Flask Application
 

@@ -34,7 +34,7 @@ def register():
 
 @auth.route("/login", methods=['GET', 'POST'])
 def login():
-    # Log an user in through the login form
+    # Log a user in through the login form
     form = LoginForm()
     if form.validate_on_submit():
         is_correct_user = UserManager().login(form.email.data, form.password.data)
